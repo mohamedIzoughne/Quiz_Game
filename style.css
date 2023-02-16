@@ -1,0 +1,142 @@
+body {
+  font-family: sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #f8f8f8;
+  --secondary-color: #0075ff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.game {
+  background: var(--main-color);
+  width: 700px;
+  max-width: calc(100% - 20px);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.game > div {
+  background: #fff;
+}
+
+.game .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25px;
+  margin-bottom: 15px;
+}
+
+.game .header h3 {
+  font-weight: normal;
+}
+
+.game .main {
+  padding: 15px;
+}
+
+.game .main .question {
+  padding: 15px 0;
+  font-size: 1.7rem;
+}
+
+.game .main .answers {
+  background-color: var(--main-color);
+}
+
+.game .main .answers li {
+  padding: 15px;
+  color: #727272;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.game .main .answers li:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.game .main .answers li label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.game button {
+  background-color: var(--secondary-color);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.game button:hover {
+  background-color: #298afa;
+}
+
+.time-bullets {
+  margin-top: 20px;
+  padding: 20px 15px;
+  border-top: 1px solid #c5c5c5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bullets {
+  display: flex;
+}
+
+.bullets li {
+  width: 25px;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 5px;
+}
+
+.bullets li.fill {
+  background-color: var(--secondary-color);
+}
+
+.result {
+  padding: 15px;
+}
+
+.result b.bad {
+  color: #dc0a0a;
+}
+
+.result b.good {
+  color: #009688;
+}
+
+.result b.excellent {
+  color: #0075ff;
+}
+
+.d-none {
+  display: none;
+}

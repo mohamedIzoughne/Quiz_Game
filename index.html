@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="header">
+        <h3>Category: HTML</h3>
+        <h3>Question Count: <span class="q-count"></span></h3>
+      </div>
+      <div class="main">
+        <h1 class="question"></h1>
+        <div class="answers">
+          <ul>
+            <li class="answer">
+              <input type="radio" name="answer" id="answer-1" checked />
+              <label for="answer-1"></label>
+            </li>
+            <li class="answer">
+              <input type="radio" name="answer" id="answer-2" />
+              <label for="answer-2"></label>
+            </li>
+            <li class="answer">
+              <input type="radio" name="answer" id="answer-3" />
+              <label for="answer-3"></label>
+            </li>
+            <li class="answer">
+              <input type="radio" name="answer" id="answer-4" />
+              <label for="answer-4"></label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="result d-none">
+        <b>Bad</b>, <span class="grade">0</span> From
+        <span class="length"></span>
+      </div>
+      <button class="submit-btn">Submit Answer</button>
+      <div class="time-bullets">
+        <ul class="bullets"></ul>
+        <p class="time">00:0<span class="seconds"></span></p>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
